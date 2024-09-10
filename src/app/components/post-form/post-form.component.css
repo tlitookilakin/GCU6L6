@@ -40,11 +40,6 @@ form * {
     margin: .25em 0px;
 }
 
-.spread {
-    display: flex;
-    justify-content: space-between;
-}
-
 .postform {
     position: relative;
 }

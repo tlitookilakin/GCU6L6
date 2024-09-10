@@ -12,3 +12,14 @@ body {
     box-shadow: 0px 0px 0px 0px var(--bs-btn-bg);
     transition: box-shadow 0s;
 }
+
+.btn-icon {
+    font-family: "bootstrap-icons";
+    padding: 0px;
+    text-align: center;
+}
+
+.spread {
+    display: flex;
+    justify-content: space-between;
+}

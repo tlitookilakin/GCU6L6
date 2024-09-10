@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Post } from '../../models/post';
 
 @Component({
@@ -10,4 +10,9 @@ import { Post } from '../../models/post';
 })
 export class SinglePostComponent {
   @Input() post: Post = {} as Post;
+  @Output() deleted: EventEmitter<Post> = new EventEmitter<Post>();
+
+  deletePost() : void {
+    this.deleted.emit(this.post);
+  }
 }

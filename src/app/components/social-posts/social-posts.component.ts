@@ -16,4 +16,11 @@ export class SocialPostsComponent {
   onSubmit(post: Post) {
     this.posts.push(post);
   }
+
+  removePost(post: Post) {
+    let index = this.posts.indexOf(post);
+    if (index >= 0) {
+      this.posts.splice(index, 1);
+    }
+  }
 }

@@ -1,7 +1,7 @@
 <div class="posts">
     <div class="post-list">
         @for (post of posts; track $index) {
-            <app-single-post [post]="post"/>
+            <app-single-post [post]="post" (deleted)="removePost($event)"/>
         }
     </div>
     <app-post-form (submitted)="onSubmit($event)"/>
