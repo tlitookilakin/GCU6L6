@@ -1,1 +1,11 @@
-<p>single-post works!</p>
+<div class="post card">
+    <div class="card-body">
+        @if (post.title) {
+            <h5 class="card-title">{{post.title}}</h5>
+            @if (post.body) {
+                <hr>
+            }
+        }
+        <p class="card-text">{{post.body}}</p>
+    </div>
+</div> 

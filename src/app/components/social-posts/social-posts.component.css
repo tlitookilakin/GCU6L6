@@ -1,0 +1,12 @@
+.post-list {
+    min-height: 40px;
+}
+
+app-post-form {
+    position: sticky;
+    bottom: 5px;
+}
+
+app-single-post {
+    margin: 0px 1em;
+}

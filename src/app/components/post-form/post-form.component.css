@@ -1,0 +1,67 @@
+.postmodal {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #aaa8;
+    backdrop-filter: blur(10px);
+    transition: opacity .5s;
+}
+
+.postmodal form {
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .5s;
+    background-color: var(--bs-body-bg);
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: -2px 2px 4px #0002;
+}
+
+.postmodal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.postmodal.hidden form {
+    transform: translate(-50%, 0%);
+}
+
+textarea {
+    min-height: 200px;
+}
+
+form * {
+    margin: .25em 0px;
+}
+
+.spread {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postform {
+    position: relative;
+}
+
+.floating-btn {
+    position: absolute;
+    right: 5px;
+    top: -2em;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    font-family: "bootstrap-icons";
+    padding: 0px;
+    border-radius: 100%;
+    font-size: 1.5em;
+}
+
+.title {
+    font-size: large;
+}

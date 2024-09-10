@@ -1,1 +1,8 @@
-<p>social-posts works!</p>
+<div class="posts">
+    <div class="post-list">
+        @for (post of posts; track $index) {
+            <app-single-post [post]="post"/>
+        }
+    </div>
+    <app-post-form (submitted)="onSubmit($event)"/>
+</div>
