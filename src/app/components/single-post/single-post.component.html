@@ -7,7 +7,16 @@
             }
         }
         <p class="card-text">{{post.body}}</p>
-        <footer>
+        <footer class="spread container">
+            <div class="row votes">
+                <button class="btn btn-primary btn-pulse col-4 btn-icon" [class.selected]="vote < 0" (click)="setVote(false)">
+                    &#xF124;
+                </button>
+                <p class="col-4">{{post.votes}}</p>
+                <button class="btn btn-primary btn-pulse col-4 btn-icon" [class.selected]="vote > 0" (click)="setVote(true)">
+                    &#xF145;
+                </button>
+            </div>
             <button class="btn btn-outline-danger btn-icon" (click)="deletePost()">&#xF659;</button>
         </footer>
     </div>

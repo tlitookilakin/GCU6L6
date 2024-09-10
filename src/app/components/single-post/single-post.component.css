@@ -3,3 +3,17 @@ footer button {
     width: 30px;
     line-height: 30px;
 }
+
+footer .votes button {
+    font-size: 1.5em;
+}
+
+footer .votes button:not(.selected) {
+    background-color: #fff;
+    border-color: transparent;
+    color: var(--bs-btn-bg);
+}
+
+footer .votes p {
+    text-wrap: nowrap;
+}

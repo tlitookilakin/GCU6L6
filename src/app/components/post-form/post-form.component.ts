@@ -20,6 +20,7 @@ export class PostFormComponent {
       return;
     }
 
+    this.post.votes = 0;
     this.submitted.emit(this.post);
     this.post = {} as Post;
     this.display = false;
